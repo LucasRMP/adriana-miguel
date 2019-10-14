@@ -1,8 +1,8 @@
 import React from 'react'
 
-import Header from '../components/Header/Header'
+import Header from '../components/Header'
 
-import './styles/index.css'
+import './styles.css'
 
 const App = () => {
   return (

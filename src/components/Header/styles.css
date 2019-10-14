@@ -1,0 +1,35 @@
+.header {
+  background-color: #5E56A5;
+  height: 100vh;
+  padding-right: 12.5%;
+  padding-left: 12.5%;
+}
+
+.logo {
+  height: 80px;
+  padding: 28px;
+}
+
+
+.desktop-top-nav {
+
+}
+
+.social-media-icon {
+  padding: 5px;
+}
+
+ul {
+  
+  
+}
+
+li {
+  
+  
+}
+
+li a {
+  color: #fff;
+  text-decoration: none;
+}
