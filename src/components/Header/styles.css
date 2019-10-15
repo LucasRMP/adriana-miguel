@@ -1,35 +1,191 @@
+
 .header {
-  background-color: #5E56A5;
-  height: 100vh;
-  padding-right: 12.5%;
-  padding-left: 12.5%;
+  --first-div-background: #5E56A5;
+  --second-div-background: #48418a;
+
+  background-color: var(--first-div-background);
+  font-family: 'GothamRoundedMedium', 'Varela Round', sans-serif;
 }
 
-.logo {
+.navbar-brand {
   height: 80px;
   padding: 28px;
+  padding-right: 50%;  
+  padding-left: 15%;
 }
 
 
-.desktop-top-nav {
+.navbar-end {
+  margin-right: 1em;
+  padding-top:0;
+}
 
+.navbar-item {
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
+.navbar-item a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 550;
+  text-decoration: none;
 }
 
 .social-media-icon {
   padding: 5px;
 }
 
-ul {
-  
-  
+.first-div {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
 }
 
-li {
-  
-  
+.dr-picture {
+  width: 257px;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 20px;
 }
 
-li a {
+.mobile-background {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  right: -60px;
+  height: 350px;
+}
+
+.desktop-background {
+  display: none;
+}
+
+.dr-background {
+  display: none;
+}
+
+.second-div {
+  background-color: var(--second-div-background);
+}
+
+.second-div h2 {
+  margin: 0 30px 30px;
+  padding-top: 50px;
+  font-size: 25px;
+  text-align: left;
   color: #fff;
+}
+
+.second-div p {
+  text-align: left;
+  margin: 30px;
+  color: #fff;
+}
+
+.second-div button {
+  height: 47px;
+  width: 240px;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 23.5px;
+  color: #5e56a5;
+  margin-left: 32px;
+  margin-bottom: 60px;
+}
+
+.contact-button:not([class*=mat-elevation-z]) {
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)
+}
+
+.second-div .contact-button {
+  box-sizing: border-box;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+  outline: 0;
+  border: none;
+  display: inline-block;
+  white-space: nowrap;
   text-decoration: none;
+  vertical-align: baseline;
+  margin: 0;
+  min-width: 64px;
+  line-height: 36px;
+  padding: 0 16px;
+  overflow: visible;
+  transform: translate3d(0,0,0);
+  transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1);
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.second-div .contact-button .button-ripple {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  pointer-events: none;
+  border-radius: inherit;
+  overflow: hidden;
+}
+
+.button-focus-overlay {
+  opacity: 0;
+  transition: opacity .2s cubic-bezier(.35,0,.25,1),background-color .2s cubic-bezier(.35,0,.25,1);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  pointer-events: none;
+  border-radius: inherit;
+  background: #000;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    position: relative;
+  }
+
+  .first-div {
+    height: 500px;
+  }
+
+  .dr-picture {
+    width: 377px;
+    left: 20%;
+  }
+
+  .mobile-background {
+    display: none;
+  }
+
+  .desktop-background {
+    display: block;
+    position: absolute;
+    top: 250px;
+    right: 200px;
+    width: 40vw;
+  }
+
+  .dr-background {
+    display: block;
+    position: absolute;
+    top: 200px;
+    left: 19%;
+  }
+
+  .second-div {
+    padding-left: 20%;
+    position: relative;
+  }
+
+  .second-div p {
+    max-width: 500px;
+  }
 }
