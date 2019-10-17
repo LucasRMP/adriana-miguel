@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+@import url('//db.onlinewebfonts.com/c/dffb2b80813d195d26fa4d2aad48b059?family=Gotham+Rounded');
 
 * {
   border : 0;
@@ -8,7 +9,19 @@
 }
 
 body {
-  font-family: 'Varela Round', sans-serif;
+  --first-div-background: #5E56A5;
+  --second-div-background: #48418a;
+  font-family: 'Gotham', 'Varela Round', sans-serif;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 
 h2 {

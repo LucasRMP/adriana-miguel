@@ -4,15 +4,15 @@ import DesktopMenu from './DesktopMenu'
 import MobileMenu  from './MobileMenu'
 
 import DrPicture from './assets/drPicture.png'
-import mobileBG from './assets/mobileBG.svg'
+import mobileBG from './assets/mobileBg.svg'
 import DrBg from './assets/drBG.svg'
 import DesktopBG from './assets/desktopBG.svg'
 import './styles.css'
 
-const Header = ({ className }) => {
+const Header = ({ className, id }) => {
 
   return (
-    <header className={className} id="inicio">
+    <header className={className} id={id}>
 
       <DesktopMenu></DesktopMenu>
       <MobileMenu></MobileMenu>
@@ -38,9 +38,9 @@ const Header = ({ className }) => {
           onClick={() => { window.open('http://wassmee.us/w/?c=db92', '_blank') }}
         >
           <span>Agende sua consulta!</span>
-          <div className="button-ripple"></div>
-          <div className="button-focus-overlay"></div>
         </button>
+
+
       </div>
 
     </header>
