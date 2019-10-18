@@ -72,13 +72,13 @@
   padding-top: 50px;
   font-size: 25px;
   text-align: left;
-  color: #fff;
+  color: #fff !important;
 }
 
 .second-div p {
   text-align: left;
   margin: 30px;
-  color: #fff;
+  color: #fff !important;
 }
 
 .second-div button {
