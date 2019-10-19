@@ -9,9 +9,20 @@ import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import EbookFrom from '../components/EbookFrom'
 
+import arrowUp from './assets/arrow-up.svg'
 import './styles.css'
 
 const App = () => {
+
+  const backToTop = (e) => {
+    e.preventDefault();
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+
   return (
     <div className="content">
       <Helmet>
@@ -27,6 +38,7 @@ const App = () => {
       <Map className="google-map"></Map>
       <Contact className="contact" id="fale-comigo"></Contact>
       <Footer className="footer" id="rodape"></Footer>
+      <a className="back-to-top-btn" onClick={backToTop} ><img src={arrowUp} alt=""/></a>
     </div>
   );
 }

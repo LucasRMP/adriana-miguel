@@ -86,3 +86,12 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+
+.back-to-top-btn {
+  position: absolute;
+}
+
+.back-to-top-btn img {
+  width: 60px;
+  height: 60px;
+}
