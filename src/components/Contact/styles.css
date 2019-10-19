@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+@import url('//db.onlinewebfonts.com/c/dffb2b80813d195d26fa4d2aad48b059?family=Gotham+Rounded');
+
+.contact {
+  background-color: var(--second-div-background);
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: 'Gotham', 'Varela Round', sans-serif;
+}
+
+.contact .logo {
+  padding: 48px;
+}
+
+.contact .social-media-icons .social-media-icon {
+  width: 35px;
+  height: 35px;
+  margin: 20px;
+}
+
+.contact .contacts p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+}
+
+@media (min-width: 900px) {
+  .contact {
+    text-align: left;
+    padding-left: 20%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .contact .logo {
+    padding: 20px;
+  }
+
+  .contact .contacts p {
+    text-align: left;
+    margin: 0;
+  }
+}

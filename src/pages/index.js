@@ -5,6 +5,8 @@ import Header from '../components/Header'
 import About  from '../components/About'
 import Specialities from '../components/Specialties'
 import Map from '../components/Map'
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 
 import './styles.css'
 
@@ -21,6 +23,8 @@ const App = () => {
       <About  className="about" id="sobre"></About>
       <Specialities className="specs" id="especialidades"></Specialities>
       <Map className="google-map"></Map>
+      <Contact className="contact" id="fale-comigo"></Contact>
+      <Footer className="footer" id="rodape"></Footer>
     </div>
   );
 }

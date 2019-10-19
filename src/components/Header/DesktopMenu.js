@@ -38,7 +38,7 @@ const DesktopMenu = ({ className }) => {
             <a href="#especialidades">Especialidades</a>
           </div>
           <div className="navbar-item">
-            <a href="#fale_comigo">Fale comigo</a>
+            <a href="#fale-comigo">Fale comigo</a>
           </div>
         </div>
       </nav>

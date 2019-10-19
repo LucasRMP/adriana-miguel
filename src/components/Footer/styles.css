@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+@import url('//db.onlinewebfonts.com/c/dffb2b80813d195d26fa4d2aad48b059?family=Gotham+Rounded');
+
+.footer {
+  font-family: 'Gotham', 'Varela Round', sans-serif;
+  text-align: center;
+  color: #707070;
+  padding: 20px;
+}

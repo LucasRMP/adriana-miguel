@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+@import url('//db.onlinewebfonts.com/c/dffb2b80813d195d26fa4d2aad48b059?family=Gotham+Rounded');
+
 .specs .content {
-  height: 600px;
+  font-family: 'Gotham', 'Varela Round', sans-serif;
+  min-height: 600px;
   text-align: center;
   background-image: url('./assets/background.png');
   background-position: top center;
@@ -38,7 +42,7 @@
 
 .specs .content .carousel-item p {
   color: #fff;
-  padding: 0 100px;
+  padding: 0 50px;
 }
 
 .specs .content .shower img {

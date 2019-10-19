@@ -11,6 +11,9 @@
 body {
   --first-div-background: #5E56A5;
   --second-div-background: #48418a;
+  --map-background: #554E97;
+  --map-shadow: #2F2B59;
+
   font-family: 'Gotham', 'Varela Round', sans-serif;
 }
 
