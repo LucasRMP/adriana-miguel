@@ -7,7 +7,7 @@ import InstaLogo  from './assets/instagram-logo.svg'
 
 const DesktopMenu = ({ className }) => {
   return (
-    <nav className={`desktop-menu navbar-menu is-spaced is-primary ${className}`}>
+    <nav className={`desktop-menu navbar-menu is-spaced is-primary is-fixed ${className}`}>
 
         <a href="#inicio">
         <img className="navbar-brand navbar-item" src={Logo} alt="ADRIANA MIGUEL"/>

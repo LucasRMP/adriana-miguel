@@ -7,6 +7,7 @@ import Specialities from '../components/Specialties'
 import Map from '../components/Map'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
+import EbookFrom from '../components/EbookFrom'
 
 import './styles.css'
 
@@ -22,6 +23,7 @@ const App = () => {
       <Header className="header" id="inicio"></Header>
       <About  className="about" id="sobre"></About>
       <Specialities className="specs" id="especialidades"></Specialities>
+      <EbookFrom className="ebook-content"></EbookFrom>
       <Map className="google-map"></Map>
       <Contact className="contact" id="fale-comigo"></Contact>
       <Footer className="footer" id="rodape"></Footer>
