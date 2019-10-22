@@ -15,19 +15,19 @@ const DesktopMenu = ({ className }) => {
 
         <div className="navbar-end">
           <div className="navbar-item">
-            <a className="social-media-icon" target="_blank" href="http://www.facebook.com/draadrianamiguel/">
+            <a className="social-media-icon" href="http://www.facebook.com/draadrianamiguel/">
             <img src={FaceLogo} alt=" "/>
             </a>
           </div>
 
           <div className="navbar-item">
-            <a className="social-media-icon" target="_blank" href="https://www.instagram.com/draadrianamiguel/">
+            <a className="social-media-icon" href="https://www.instagram.com/draadrianamiguel/">
             <img src={InstaLogo} alt=" "/>
             </a>
           </div>
 
           <div className="navbar-item">
-            <a className="social-media-icon" target="_blank" href="http://wassmee.us/w/?c=db92">
+            <a className="social-media-icon" href="http://api.whatsapp.com/send?1=pt_BR&phone=5562981856722&text=Oi!">
             <img src={WppLogo} alt=" "/> 
             </a>
           </div>

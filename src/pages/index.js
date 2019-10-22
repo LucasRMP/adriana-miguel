@@ -10,21 +10,9 @@ import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import EbookFrom from '../components/EbookFrom'
 
-import arrowUp from './assets/arrow-up.svg'
 import './styles.css'
 
 const App = () => {
-
-  const backToTop = (e) => {
-    e.preventDefault();
-    if (window.scrollY > 20) {
-    }
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  }
-
   return (
     <div className="content">
       <Helmet>
@@ -47,6 +35,7 @@ const App = () => {
         AnimationDuration={500}
         ContainerClassName='ScrollUpButton__Container'
         TransitionClassName='ScrollUpButton__Toggled'
+        style={{backgroundColor:"#302B59"}}
       />
     </div>
   );
