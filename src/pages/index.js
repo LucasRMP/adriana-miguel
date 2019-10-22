@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import ScrollUpButton from "react-scroll-up-button";
 
 import Header from '../components/Header'
 import About  from '../components/About'
@@ -16,7 +17,8 @@ const App = () => {
 
   const backToTop = (e) => {
     e.preventDefault();
-
+    if (window.scrollY > 20) {
+    }
     window.scrollTo({
       top: 0,
       behavior: "smooth"
@@ -38,7 +40,14 @@ const App = () => {
       <Map className="google-map"></Map>
       <Contact className="contact" id="fale-comigo"></Contact>
       <Footer className="footer" id="rodape"></Footer>
-      <a className="back-to-top-btn" onClick={backToTop} ><img src={arrowUp} alt=""/></a>
+
+      <ScrollUpButton
+        ShowAtPosition={150}
+        EasingType='easeOutCubic'
+        AnimationDuration={500}
+        ContainerClassName='ScrollUpButton__Container'
+        TransitionClassName='ScrollUpButton__Toggled'
+      />
     </div>
   );
 }
