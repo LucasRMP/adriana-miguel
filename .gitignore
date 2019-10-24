@@ -70,3 +70,4 @@ yarn-error.log
 
 # Development assets
 *.xd
+*.code-workspace
