@@ -8,7 +8,7 @@ const About = ({ className, id }) => {
     <div className={className} id={id}>
       <div className="content">
         <h1>Sobre mim</h1>
-        <img className="about-picture" src={aboutPicture}/>
+        <img className="about-picture" src={aboutPicture} alt=""/>
         <p>
           Me formei em 2017 pela Faculdade de Medicina de São José do Rio Preto, interior de São Paulo. Fiz uma sub-especialização em ouvido no Hospital de Reabilitação de Anomalias Craniofaciais (HRAC/Centrinho) na unidade da USP de Bauru, em São Paulo.
           <br/>

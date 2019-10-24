@@ -28,19 +28,19 @@ const Specialities = ({ className, id }) => {
         <div className="carousel">
 
           <div className="carousel-item">
-            <img src={mouthSVG}/>
+            <img src={mouthSVG} alt=""/>
             <h4>Garganta</h4>
             <p>Garganta é o nome que se dá ao conjunto de órgãos aerodigestivos situados no interior do pescoço, neles compreendidos a faringe e a laringe, além da primeira porção do esôfago e dos primeiros anéis da traquéia. Faz parte, portanto, dos aparelhos digestivo e respiratório.</p>
           </div>
           
           <div className="carousel-item">
-            <img src={earSVG}/>
+            <img src={earSVG} alt=""/>
             <h4>Ouvido</h4>
             <p>A audição é o primeiro sentido desenvolvido pelo ser humano, responsável por desenvolver os processos da percepção, fala e comunicação, permitindo a interação interpessoal.</p>
           </div>
           
           <div className="carousel-item">
-            <img src={noseSVG}/>
+            <img src={noseSVG} alt=""/>
             <h4>Nariz</h4>
             <p>O nariz é a porta de entrada para as vias aéreas, responsável por filtrar, umidificar e aquecer o ar que vai para os pulmões.</p>
           </div>

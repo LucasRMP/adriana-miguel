@@ -18,11 +18,11 @@ const Header = ({ className, id }) => {
       <MobileMenu></MobileMenu>
 
       <div className="first-div">
-        <img className="dr-picture" src={DrPicture}/>
-        <img className= "mobile-background" src={mobileBG}/>
+        <img className="dr-picture" src={DrPicture} alt=""/>
+        <img className= "mobile-background" src={mobileBG} alt=""/>
       </div>
-      <img className="desktop-background" src={DesktopBG}/>
-      <img className="dr-background" src={DrBg}/>
+      <img className="desktop-background" src={DesktopBG} alt=""/>
+      <img className="dr-background" src={DrBg} alt=""/>
 
       <div className="second-div">
         <h2>Otorrinolaringologia</h2>

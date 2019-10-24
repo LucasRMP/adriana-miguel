@@ -40,16 +40,16 @@ const Contact = ({ className, id }) => {
   return (
       <div className={className} id={id}>
         <div className="content-1">
-          <img className="logo" src={logo} />
+          <img className="logo" src={logo} alt=""/>
           <div className="social-media-icons">
             <a href="https://www.facebook.com/draadrianamiguel/" className="social-media-link">
-              <img className="social-media-icon" src={facebookLogo}/>
+              <img className="social-media-icon" src={facebookLogo} alt=""/>
             </a>
             <a href="https://www.instagram.com/draadrianamiguel/" className="social-media-link">
-              <img className="social-media-icon" src={instagramLogo}/>
+              <img className="social-media-icon" src={instagramLogo} alt=""/>
             </a>
             <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5562981856722&text=Oi!" className="social-media-link">
-              <img className="social-media-icon" src={whatsappLogo}/>
+              <img className="social-media-icon" src={whatsappLogo} alt=""/>
             </a>
           </div>
           <div className="contacts">
@@ -62,11 +62,9 @@ const Contact = ({ className, id }) => {
         <form 
           className="form email-form" 
           onSubmit={handleSubmit}
-          // method="POST"
-          // action="https://formspree.io/xoqajvkj"  
         >
           <div className="field">
-            <label className="label">Nome</label>
+            <label className="label">Nome *</label>
             <div className="control">
               <input 
                 className="field name-field input is-rounded" 
@@ -80,7 +78,7 @@ const Contact = ({ className, id }) => {
           </div>
           
           <div className="field">
-            <label className="label">Email</label>
+            <label className="label">Email *</label>
             <div className="control">
               <input 
                 className="field email-field input is-rounded" 
@@ -94,7 +92,7 @@ const Contact = ({ className, id }) => {
           </div>
 
           <div className="field">
-            <label className="label">Mensagem</label>
+            <label className="label">Mensagem *</label>
             <div className="control">
               <textarea 
                 className="field msg-field textarea is-rounded" 
