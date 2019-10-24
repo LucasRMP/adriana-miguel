@@ -21,22 +21,20 @@ const Contact = ({ className, id }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     const data = {
       _replyto: email,
       message: msg,
       name,
     }
-
     try {
       await axios.post('https://formspree.io/xoqajvkj', data);
       alert("Mensagem enviada com sucesso!");
       resetForm();
     }
-    catch {
+    catch (err) {
+      console.error(err);
       alert("A mensagem não pode ser enviada!");
     }
-
   }
 
   return (

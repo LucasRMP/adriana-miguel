@@ -2,6 +2,9 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import ScrollUpButton from "react-scroll-up-button";
 
+import './styles.css'
+import icon from './assets/favicon.ico'
+
 import Header from '../components/Header'
 import About  from '../components/About'
 import Specialities from '../components/Specialties'
@@ -10,12 +13,12 @@ import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import EbookFrom from '../components/EbookFrom'
 
-import './styles.css'
 
 const App = () => {
   return (
     <div className="content">
       <Helmet>
+        <link rel="icon" type="image/x-icon" href={icon}></link>
         <title>Adriana Miguel</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"/>
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>

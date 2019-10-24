@@ -58,6 +58,7 @@
 
 .email-form .field .msg-field {
   border-radius: 20px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 900px) {
