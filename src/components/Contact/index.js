@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import axios from 'axios'
 
 import logo from './assets/white-logo.svg'
 import facebookLogo from './assets/facebook.svg'
@@ -8,6 +9,10 @@ import './styles.css'
 
 const Contact = ({ className, id }) => {
 
+  const [ name, setName ]   = useState('');
+  const [ email, setEmail ] = useState('');
+  const [ msg, setMsg ]     = useState('');
+
   const resetForm = () => {
     document.querySelector('.name-field').value = '';
     document.querySelector('.email-field').value = '';
@@ -16,7 +21,22 @@ const Contact = ({ className, id }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Formulário enviado!');
+
+    const data = {
+      _replyto: email,
+      message: msg,
+      name,
+    }
+
+    try {
+      await axios.post('https://formspree.io/xoqajvkj', data);
+      alert("Mensagem enviada com sucesso!");
+      resetForm();
+    }
+    catch {
+      alert("A mensagem não pode ser enviada!");
+    }
+
   }
 
   return (
@@ -43,8 +63,9 @@ const Contact = ({ className, id }) => {
 
         <form 
           className="form email-form" 
-          method="POST"
-          action="https://formspree.io/xoqajvkj"  
+          onSubmit={handleSubmit}
+          // method="POST"
+          // action="https://formspree.io/xoqajvkj"  
         >
           <div className="field">
             <label className="label">Nome</label>
@@ -53,6 +74,7 @@ const Contact = ({ className, id }) => {
                 className="field name-field input is-rounded" 
                 type="text" 
                 name="name" 
+                onChange={(e) => setName(e.target.value)}
                 placeholder="Nome" 
                 required
               />
@@ -67,6 +89,7 @@ const Contact = ({ className, id }) => {
                 type="email" 
                 name="_replyto" 
                 placeholder="Seu melhor e-mail!" 
+                onChange={(e) => setEmail(e.target.value)}
                 required
               />
             </div>
@@ -79,6 +102,7 @@ const Contact = ({ className, id }) => {
                 className="field msg-field textarea is-rounded" 
                 name="message" 
                 placeholder="Digite sua mensagem" 
+                onChange={(e) => setMsg(e.target.value)}
                 required
               />
             </div>
