@@ -19,8 +19,8 @@
 }
 
 .about .content .about-picture {
-  width: 311px;
-  margin: 25px;
+  max-width: 311px;
+  height: auto;
 }
 
 .about .content p {

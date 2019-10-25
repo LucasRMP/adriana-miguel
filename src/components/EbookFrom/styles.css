@@ -20,8 +20,8 @@
 }
 
 .ebook-content img {
-  width: 276.29;
-  height: 340.42; 
+  max-width: 276.29px;
+  height: auto; 
   margin: 25px auto 25px auto;
   grid-row: 2/3;
 }
@@ -29,7 +29,7 @@
 .ebook-content .ebook-form {
   margin: 25px auto 25px auto;
   grid-row: 3/4;
-  width: 360px;
+  max-width: 360px !important;
 }
 
 .ebook-content .ebook-form .form-input {
@@ -49,6 +49,16 @@
   font-weight: bold;
 }
 
+.ebook-content .ebook-form .was-clicked {
+  background-color: #699FD2;
+  color: #fff;
+  padding: 0px 30px;
+  width: 350px;
+  height: 40px;
+  margin: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
 @media (min-width: 900px) {
   .ebook-content {

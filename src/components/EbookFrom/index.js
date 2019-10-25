@@ -6,29 +6,44 @@ import './styles.css'
 
 const EbookForm = ({ className }) => {
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    //? MAKE THE FORM SUBMIT WITH AXIOS
-    // const API_KEY = '1de6150a15b5000615d310b365ec7bfd-us20';
+  const [ wasClicked, setWasClicked ] = useState(false);
+
+
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   //? MAKE THE FORM SUBMIT WITH AXIOS
+  //   const API_KEY = '1de6150a15b5000615d310b365ec7bfd-us20';
  
-    // const mcData = {
-    //   email_address: 'lucas.rmagalhaes@gmail.com',
-    //   status: 'pending'
-    // };
+  //   const mcData = {
+  //     email_address: 'lucas.rmagalhaes@gmail.com',
+  //     status: 'pending'
+  //   };
 
-    // const config = {
-    //   url: 'https://cors-anywhere.herokuapp.com/https://us20.api.mailchimp.com/3.0/lists/654d27b74c/members',
-    //   method: 'POST',
-    //   headers: {
-    //     Authorization: `apikey ${API_KEY}`,
-    //   },
-    //   body: JSON.stringify(mcData)
-    // };
+  //   const config = {
+  //     url: 'https://cors-anywhere.herokuapp.com/https://us20.api.mailchimp.com/3.0/lists/654d27b74c/members',
+  //     method: 'POST',
+  //     headers: {
+  //       Authorization: `apikey ${API_KEY}`,
+  //     },
+  //     body: JSON.stringify(mcData)
+  //   };
 
-    // const response2 = await fetch(config);
-    // console.log("Response: ", response2);
+  //   const response2 = await fetch(config);
+  //   console.log("Response: ", response2);
 
-    document.querySelector('.form-input').value = '';
+  //   document.querySelector('.form-input').value = '';
+  // }
+
+  const handleClick = () => {
+    let VALID_EMAIL_TEMPLATE = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    if (VALID_EMAIL_TEMPLATE.test(document.querySelector('.email').value)) {
+      setWasClicked(true);
+      let btn = document.querySelector('.submit-btn');
+      btn.innerHTML = 'enviamos para seu e-mail!';
+      document.querySelector('.ebook-form').submit();
+      document.querySelector('.form-input').value = '';
+    }
   }
 
   return (
@@ -52,10 +67,12 @@ const EbookForm = ({ className }) => {
           required
         />
         <button 
-          className="submit-btn button is-rounded is-small" 
+          className={`submit-btn button is-rounded is-small ${wasClicked ? 'was-clicked' : ''} `} 
           id="mc-embedded-subscribe"
+          onClick={handleClick}
           type="submit"
           name="subscribe"
+          disabled={wasClicked}
         >
           Baixar E-book
         </button>
