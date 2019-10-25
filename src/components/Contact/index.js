@@ -64,6 +64,10 @@ const Contact = ({ className, id }) => {
           onSubmit={handleSubmit}
         >
           <div className="field">
+            <h1 className="form-title">Contato</h1>
+          </div>
+
+          <div className="field">
             <label className="label">Nome *</label>
             <div className="control">
               <input 

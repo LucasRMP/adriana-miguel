@@ -59,7 +59,7 @@ const EbookForm = ({ className }) => {
         target="_blank"
       >
         <input 
-          className="form-input input is-primary is-rounded email" 
+          className="field form-input input is-primary is-rounded email" 
           id="mce-EMAIL"
           type="email" 
           name="EMAIL"
@@ -67,7 +67,7 @@ const EbookForm = ({ className }) => {
           required
         />
         <button 
-          className={`submit-btn button is-rounded is-small ${wasClicked ? 'was-clicked' : ''} `} 
+          className={`field submit-btn button is-rounded is-small ${wasClicked ? 'was-clicked' : ''} `} 
           id="mc-embedded-subscribe"
           onClick={handleClick}
           type="submit"
