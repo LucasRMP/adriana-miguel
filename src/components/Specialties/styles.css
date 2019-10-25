@@ -3,7 +3,7 @@
 
 .specs .content {
   font-family: 'Gotham', 'Varela Round', sans-serif;
-  min-height: 600px;
+  height: auto;
   text-align: center;
   background-image: url('./assets/background.png');
   background-position: top center;
@@ -15,7 +15,7 @@
 .specs .content h2 {
   color: #fff;
   font-size: 30px;
-  padding: 50px 20px 20px;
+  padding: 50px 20px 0 20px;
 }
 
 
@@ -37,12 +37,14 @@
 .specs .content .carousel-item h4 {
   color: #fff;
   font-size: 20px;
-  margin: 40px;
+  margin: 20px;
 }
 
 .specs .content .carousel-item p {
   color: #fff;
   padding: 0 50px;
+  max-width: 750px !important;
+  margin: 0 auto;
 }
 
 .specs .content .shower img {
@@ -90,7 +92,7 @@
 
   .specs .content .carousel-item p {
     padding: 0;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
   }
   
   .specs .content .shower {

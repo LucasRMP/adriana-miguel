@@ -14,19 +14,19 @@ const MobileMenu = ({ className }) => {
       
       <div className="mobile-menu-itens">
         <div className="mobile-menu-item">
-          <a className="mobile-social-media-icon" href="http://www.facebook.com/draadrianamiguel/">
+          <a className="mobile-social-media-icon" href="http://www.facebook.com/draadrianamiguel/" target="_blank">
             <img src={FaceLogo} alt=""/>
           </a>
         </div>
 
         <div className="mobile-menu-item">
-          <a className="mobile-social-media-icon" href="https://www.instagram.com/draadrianamiguel/">
+          <a className="mobile-social-media-icon" href="https://www.instagram.com/draadrianamiguel/" target="_blank">
             <img src={InstaLogo} alt=""/>
           </a>
         </div>
         
         <div className="mobile-menu-item">
-          <a className="mobile-social-media-icon" href="http://api.whatsapp.com/send?1=pt_BR&phone=5562981856722&text=Oi!">
+          <a className="mobile-social-media-icon" href="http://api.whatsapp.com/send?1=pt_BR&phone=5562981856722&text=Oi!" target="_blank">
             <img src={WppLogo} alt=""/>
           </a>
         </div>

@@ -42,18 +42,18 @@ const Contact = ({ className, id }) => {
         <div className="content-1">
           <img className="logo" src={logo} alt=""/>
           <div className="social-media-icons">
-            <a href="https://www.facebook.com/draadrianamiguel/" className="social-media-link">
+            <a href="https://www.facebook.com/draadrianamiguel/" className="social-media-link" target="_blank">
               <img className="social-media-icon" src={facebookLogo} alt=""/>
             </a>
-            <a href="https://www.instagram.com/draadrianamiguel/" className="social-media-link">
+            <a href="https://www.instagram.com/draadrianamiguel/" className="social-media-link" target="_blank">
               <img className="social-media-icon" src={instagramLogo} alt=""/>
             </a>
-            <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5562981856722&text=Oi!" className="social-media-link">
+            <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5562981856722&text=Oi!" className="social-media-link" target="_blank">
               <img className="social-media-icon" src={whatsappLogo} alt=""/>
             </a>
           </div>
           <div className="contacts">
-            <p className="phones">(62) 3928-0988<br/>(62) 98185-6722</p>
+            <p className="phones"><a href="tel:6239280988">(62) 3928-0988</a><br/><a href="tel:62981856722">(62) 98185-6722</a></p>
             <p className="address">Rua 17-A, 899, Edifício Centro de Medicina Amyn Daher, 2 andar, St. Aeroporto, Goiânia-GO, CEP 74070-100</p>
           </div>
         </div>

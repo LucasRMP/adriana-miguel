@@ -34,6 +34,10 @@
   margin: auto;
 }
 
+.contact .contacts p a{
+  color: #fff;
+}
+
 .email-form {
   grid-row: 2/3;
   grid-column: 1/2;

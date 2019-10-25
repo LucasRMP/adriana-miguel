@@ -17,6 +17,7 @@ import EbookFrom from '../components/EbookFrom'
 const App = () => {
   return (
     <div className="content">
+      
       <Helmet>
         <link rel="icon" type="image/x-icon" href={icon}></link>
         <title>Adriana Miguel</title>

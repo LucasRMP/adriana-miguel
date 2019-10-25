@@ -24,7 +24,7 @@
 }
 
 .about .content p {
-  margin: 34px 34px 58px;
+  margin: 0 34px 58px;
   text-align: justify;
   font-size: 14px;
   line-height: 26px;
@@ -41,7 +41,7 @@
   .about .content h1 {
     grid-column: 3/4;
     text-align: left;
-    margin: 34px;
+    margin: 34px 34px 20px 34px; 
   }
 
   .about .content .about-picture {

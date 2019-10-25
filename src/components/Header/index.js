@@ -35,7 +35,7 @@ const Header = ({ className, id }) => {
 
         <button 
           className="contact-button"
-          onClick={() => { window.open('http://wassmee.us/w/?c=db92', '_blank') }}
+          onClick={() => { window.open('http://api.whatsapp.com/send?1=pt_BR&phone=5562981856722&text=Oi!', '_blank') }}
         >
           <span>Agende sua consulta!</span>
         </button>
